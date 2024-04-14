@@ -7,16 +7,10 @@ def encode(password):
     return encoded_password
 
 
-def decode(password):
-    decoded_password = ""
-    for digit in password:
-        decoded_digit = str((int(digit) - 3) % 10)
-        decoded_password += decoded_digit
-    return decoded_password
 
 
 if __name__ == "__main__":
-    
+
     print("""Menu
     -------------
     1. Encode
